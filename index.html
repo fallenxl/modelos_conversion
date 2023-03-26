@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predicción de conversión de unidades</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Importa TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.15.0/dist/tf.min.js"></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div>
+          <label for="input">Valor de entrada</label>
+          <input type="number" id="entrada" value="0" />
+        </div>
+        <div>
+          <select id="option">
+            <option value="0">Metros a Kilometros</option>
+            <option value="1">Libras a Kilogramos</option>
+            <option value="2">Megabytes a Gigabytes</option>
+          </select>
+        </div>
+        <div>
+          <p>Resultado:</p>
+          <span id="resultado">0.00</span>
+        </div>
+        <div>
+          <button id="btnConvertir" type="submit">Convertir</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
